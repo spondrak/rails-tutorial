@@ -5,6 +5,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    Honeycomb.add_field('post.title', @post.title)
   end
 
   def new
