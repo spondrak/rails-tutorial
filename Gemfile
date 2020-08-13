@@ -51,3 +51,5 @@ group :test do
 end
 
 gem "honeycomb-beeline", "~> 2.1"
+
+gem "faraday", "~> 1.0"
